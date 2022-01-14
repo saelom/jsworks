@@ -9,4 +9,6 @@ var schoolClass = 3; //카멜표기
 document.write(grade + '<br>');
 document.write(schoolClass + '<br>');*/
 
-document.write('<p><span>'+ naming + "학생은" +  2+ "</span> 학년" + grade + 3 + schoolClass + "반입니다.</p>");
+document.write('<p><span>'+ naming + "</span>학생은 " +  grade + "학년 "
++ schoolClass + "반입니다.</p>");
+
