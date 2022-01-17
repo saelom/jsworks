@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3의 배수 찾기 (p.511)</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        p{
+            color: #f00;
+        }
+    </style>
+</head>
+<body>
+    <h2>3의 배수 찾기</h2>
+    <script>
+        //1부터 num까지 숫자 중 3의 배수 찾기
+        let num = prompt("몇 까지의 3의 배수를 찾을까요?");
+        let count = 0;
+        
+        //연산
+        if(num === null){ // 취소 버튼을 눌렀을 때 (값이 입력되지 않음.)
+            document.write("");
+        }
+        else{
+            for(let i = 1; i <= num; i++ ){ //종료값이 변수일 때
+            if(i % 3 === 0){
+                document.write(i + " , " );
+                count += 1; // count++
+            }                                
+        }
+        
+        /*
+         i = 1 , false이므로 빠져나옴.
+         i = 3 , 3이 출력되고, count = 1 이 됨
+         i = 6 , 6이 출력되고, count = 2 가 됨
+         i = 9 , 9가 출력되고, count = 3 이 됨 
+         */        
+
+         document.write('<p >' +num + "까지의 3의 배수의 개수 : " + count + '</p>');
+    
+        
+    }
+    </script>
+    
+</body>
+</html>
