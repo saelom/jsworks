@@ -7,10 +7,12 @@
     <title>글자색 바꾸기</title>
 </head>
 <body>
-    <h1 id="text" onclick="changeColor()">Click on this text!</h1>
+    <h1 id="text" onmouseover="changeColor()">Click on this text!</h1>  
+    <!-- 클릭했을 때 색 바꾸게 하려면 onclick으로 -->
     <script>
         function changeColor(){
             document.getElementById('text').style.backgroundColor = "#ff0";
+            //document.getElementById('text').style.Color = "#blue'";
         }
     </script>
 </body>
